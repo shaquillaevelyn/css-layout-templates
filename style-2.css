@@ -23,17 +23,21 @@ nav{
     background-color:#2E5077;
 }
 
+section {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space:nowrap;
+    scroll-behavior: smooth;
+}
+
 
 .section div{
-      overflow: auto;
-  white-space: nowrap;
         height: 500px;
-        width: 100%;
+        width: 80%;
+        left: 0;
         display: inline-flex;
         flex-direction: row;
-        overflow-x: scroll;
         position: relative;
-
 }
 
 
