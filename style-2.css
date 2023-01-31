@@ -1,0 +1,62 @@
+html{
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: oblique;
+    color: white;
+    text-align: center;
+}
+
+
+.centered {
+/* margin: 0% 10% 0% 10%; */
+    position: relative;
+    top: 50%;
+  /* bring your own prefixes */
+  transform: translate( 0%, -50%);
+}
+
+nav{
+    height: 2em;
+    background-color:#2E5077;
+}
+
+
+.section div{
+      overflow: auto;
+  white-space: nowrap;
+        height: 500px;
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        position: relative;
+
+}
+
+
+.one{
+    background-color: #4DA1A9;
+
+
+}
+
+.two{
+    background-color: #D7E8BA;
+
+
+}
+
+.three{
+    background-color: #FFC170;
+
+}
+
+
+footer{
+    height: 2em;
+    background-color: #2E5077;
+
+}
