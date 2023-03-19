@@ -1,18 +1,12 @@
 <!DOCTYPE html>
+
+<html>
 <head>
-    <!-- <link rel="stylesheet" href="style-1.css"> -->
-     <!-- <link rel="stylesheet" href="style-2.css"> -->
-    <link rel="stylesheet" href="style-3.css">
+    <!-- <link rel="stylesheet" id="style-1" href="style-1.css"> -->
+     <!-- <link rel="stylesheet" id="style-2"  href="style-2.css"> -->
+    <link rel="stylesheet" id="style-3" href="style-3.css">
 </head>
 
-<script>
-    // const changeTheme = () => {
-    //     theme.value = theme.value === "one" ? "two" : "one"
-
-    // setPreference()
-    // }
-
-</script>
 
 <body class="centered">
     <nav >
@@ -22,6 +16,7 @@
             title="css theme toggle"
             aria-label="auto"
             aria-live="polite"
+            onclick="numberCounter()"
         >
             Switch Theme
         </button>
@@ -37,8 +32,62 @@
         <div class="three">
             area 3
         </div>
+
     </section>
     <footer>
         footer
     </footer>
+
+    <script>
+  
+        let number = 0  
+        const changeTheme = document.querySelector('#theme-toggle')
+
+        let theme = document.getElementsByTagName('link')[0]
+
+        function numberCounter(){
+                        if (theme.getAttribute('href') == 'style-1.css') {
+                theme.setAttribute('href', 'style-2.css');
+            } else {
+                theme.setAttribute('href', 'style-1.css');
+            }
+
+        }
+
+
+        // function numberCounter(number){
+
+        //    number += 1
+
+        //     if (number > 3){
+        //             number = 0
+        //         }
+
+        // }
+
+
+        // function themeToggle(number){
+
+        //     let theme = document.getElementsByTagName('link')[number]
+
+        //     switch (number){
+        //         case 0:
+        //         theme.setAttribute('href', 'style-1.css');
+        //         break;
+
+        //         case 1:
+        //         theme.setAttribute('href', 'style-2.css');
+        //         break;
+
+        //         case 2:
+        //         theme.setAttribute('href', 'style-3.css');
+        //         break;
+        //     }
+           
+        // }
+
+</script>
+
 </body>
+
+</html>
